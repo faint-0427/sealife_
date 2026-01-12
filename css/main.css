@@ -114,7 +114,7 @@ body {
 
 .exibition .xb {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns:  45fr 55fr;
     gap: 70px;
     margin-top: 50px;
 }
@@ -139,7 +139,7 @@ body {
 
 .exibition .concert {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 55fr 45fr;
     gap: 70px;
 }
 
@@ -226,7 +226,7 @@ body {
     border: 1px solid #0099DD;
 }
 
-@media(max-width:1200px) {
+@media(max-width:1380px) {
     .exibition {
         padding: 100px 0;
     }
@@ -389,14 +389,7 @@ body {
     }
 
     .picture .review_list li .review_txt {
-        height: 300px;
-    }
-}
-
-@media(max-width:1200px) {
-
-    .picture .review_list li .review_txt {
-        height: 250px;
+        height: auto;
     }
 }
 
@@ -449,7 +442,7 @@ body {
     border-radius: 10px;
     gap: 3rem;
     align-items: center;
-    min-height: 40vh;
+    min-height: 4rem;
     height: auto;
     padding: 2rem 0;
 
@@ -459,8 +452,8 @@ body {
     
     .ticket .inner .ticket_list {
         grid-template-columns: repeat(1, 1fr);
-        height: 85vh;
 
+        
     }
 }
 
@@ -468,7 +461,7 @@ body {
 @media (min-width: 768px) {
     .ticket .inner .ticket_list {
         grid-template-columns: repeat(2, 1fr);
-        height: 85vh;
+
 
     }
 
@@ -482,7 +475,7 @@ body {
     .ticket .inner .ticket_list {
         grid-template-columns: repeat(4, 1fr);
         height: 65vh;
-        /* 큰 화면에서는 기존 높이 유지 */
+        
         gap: 3rem;
     }
 
@@ -576,6 +569,7 @@ li:nth-of-type(2) .ticket_txt_more {
     background: #fff;
     padding: 5px 15px;
     border-radius: 5px;
+    z-index: 99;
 }
 
 .ticket_txt_more dt {

@@ -1,9 +1,9 @@
 /* 전체 풀페이지 */
 $('#fullpage').fullpage({
-    responsiveWidth: 1024,
+    responsiveWidth: 1380,
     scrollHorizontally: true,
     navigation: true,
-    navigationPosition: 'right' ,
+    navigationPosition: 'right',
     showActiveTooltip: true,
     onLeave: function (origin, destination, direction, trigger) {
         if (destination === 2 || destination === 4) {
