@@ -1,0 +1,22 @@
+
+
+.body_special{background: #0b2c87;}
+
+#header.header_special{background: #0b2c87; }
+#header.header_special .inner{color: #fff;}
+#header.header_special .inner .lan select{background: #0b2c87;color: #fff;}
+#header.header_special .inner .depth2_special{background: #0b2c87;color: #fff; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);}
+/* banner */
+#main.main_special{background: #0b2c87;}
+#main .banner  video{ object-fit: cover; height: 500px; width: 100%;}
+#main .banner  video{ object-fit: cover; height: 500px; width: 100%;}
+#main .banner .inner{position: relative; max-width: 1500px; margin-top: 200px; text-align: center;  }
+#main .banner .inner .floor_txt h3{ font-size: 4rem; margin-bottom: 20px;}
+#main .banner .inner .floor_txt{margin-bottom: 50px;}
+
+
+#main .banner .inner .floor_img{display: grid; grid-template-columns: 1fr; margin: 0 auto; width: 80%;}
+#main .banner .inner .floor_img:last-child{margin-bottom: 50px;}
+#main .banner .inner .floor_img img{width: 100%; padding-bottom: 50px;}
+
+

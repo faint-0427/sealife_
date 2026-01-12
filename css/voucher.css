@@ -1,0 +1,61 @@
+
+:root{
+    --main-color:#F9661E
+}
+
+body{color: #fff; font-size: 1.6rem; font-family: "Inter", sans-serif; }
+.inner{max-width: 1740px; margin: 0 auto; padding: 0 20px;}
+
+
+
+
+/* banner */
+
+#main .banner  video{ object-fit: cover; height: 500px; width: 100%;}
+#main .banner .inner{position: relative; max-width: 1500px;}
+
+
+#main .banner .banner_contents{position: absolute; left: 50%; bottom: 50%; transform: translate(-50%, -50%); text-shadow: 1px 1px 3px rgba(0,0,0,0.5); text-align: center; padding-top: 250px;}
+#main .banner .banner_txt h3{font-size: 4rem; padding-bottom: 10px; }
+
+
+
+
+
+/* .voucher_info */
+.voucher_info .inner{ max-width: 1350px; color: #000; margin: 50px auto;  align-items: center; }
+
+.voucher_info .voucher_info_txt h3{font-size: 3rem; padding: 30px 0 10px;}
+.voucher_info .voucher_info_txt strong{font-size: 2rem;  font-weight: 500;}
+.voucher_info .voucher_info_txt p{ padding: 10px 0 ; text-align: left;}
+
+
+/* .voucher_ticket */
+.voucher_ticket{  color: #000; margin: 150px 0 ;  }
+.voucher_ticket .inner{max-width: 1300px; }
+.voucher_ticket .inner h3{padding-bottom: 50px; font-size: 4rem;}
+.voucher_ticket .voucher_ticket_con{display: grid; grid-template-columns: 1fr 1fr; gap: 30px;}
+
+@media(max-width:800px){
+    .voucher_ticket .voucher_ticket_con{grid-template-columns: 1fr;}
+}
+.voucher_ticket .voucher_ticket_con li{height: 50vh; position: relative; }
+.voucher_ticket .voucher_ticket_con li img{height: 100%; width: 100%; object-fit: cover;}
+.voucher_ticket .voucher_ticket_txt{position: absolute; left: 0; bottom: 0; color: #fff;backdrop-filter: blur(60px); width: 100%;height: 100%; padding: 30px;}
+.voucher_ticket .voucher_ticket_txt h3{font-size: 3rem; }
+
+.voucher_ticket .voucher_ticket_txt ul{display: flex; gap: 30px;  margin-left: 30px; text-align: left;  }
+.voucher_ticket .voucher_ticket_txt .line{border-top: 1px solid rgba(255,255,255,0.5); padding: 20px 0; margin-top: 20px;}
+.voucher_ticket .voucher_ticket_txt ul li p:last-child{font-size: 2rem;}
+
+
+
+.voucher_ticket .btn_buy{position: absolute; right: 2vw; bottom: 4vh; width: 200px; padding: 10px 0; background: #FF9933; border-radius: 30px; text-align: center; color: #fff; font-size: 1.5rem; cursor: pointer;}
+.voucher_ticket .btn_buy:hover{ background:#000;transition: all 0.5s ;}
+
+/* voucher_faq */
+.voucher_faq{color: #000; margin: 100px auto; }
+.voucher_faq .inner{ max-width: 1350px;}
+.voucher_faq .voucher_faq_txt h3{ font-size: 4rem; padding: 10px 0 30px; }
+.voucher_faq .voucher_faq_txt strong{font-size: 2rem; margin: 10px;  }
+.voucher_faq .voucher_faq_txt p{ font-size: 1.8rem;  border-radius: 30px; padding: 20px; margin: 10px 0;}

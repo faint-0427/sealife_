@@ -1,0 +1,51 @@
+
+
+
+body{color: #fff; font-size: 1.6rem; font-family: "Inter", sans-serif; background: #fff;}
+.inner{max-width: 1740px; margin: 0 auto; padding: 0 20px;}
+
+
+
+/* banner */
+#main .banner { background: url(../img/personal.jpg) no-repeat center; object-fit: cover; height: 700px;}
+#main .banner .inner{ max-width: 1500px;position: relative;}
+
+#main .banner .banner_txt{  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);background: rgba(0, 0, 0, 0.5); display: block;  position: absolute; left: 5vw; bottom: 30vh; z-index: 50; padding: 20px; }
+#main .banner .banner_txt h3{font-size: 4rem; padding-bottom: 10px; }
+#main .banner .banner_txt p{font-size: 2rem; }
+
+#main .banner .banner_map{font-weight: 600; font-size: 2.5rem; width: 150px; text-align: right; }
+#main .banner .banner_map img{width: 100%;}
+#main .banner .banner_map p{padding: 10px; }
+#main .banner .banner_map p::before{content: ""; display: inline-block; background: url(../img_icon/map2.png) no-repeat center ; width: 36px; height: 36px;} 
+
+
+
+
+
+
+/* ticket */
+
+.ticket{width: 100%; margin: 100px 0;}
+.ticket .inner{  max-width: 1440px; margin: 0 auto; }
+.ticket .inner ul{display: flex;   overflow: hidden;  border-radius: 30px; gap: 30px;}
+.ticket .inner > h3{padding: 30px 0 50px ; font-size: 4rem; text-align: center; color: #000;}
+.ticket .inner ul li{position: relative; width: 80%; overflow: hidden; }
+.ticket .inner ul li:hover{transition: all 0.5s;}
+.ticket .inner ul li img{width: 40%; height: 300px;}
+.ticket .inner ul li video{width: 40%; height: 300px; object-fit: cover;}
+.ticket .ticket_txt{ width: 100%;height: 100%; padding-top: 15px;text-align: center; background:#0099DD;  border-radius: 50px  ;transition: all 1s;}
+.ticket .ticket_txt h3{padding: 30px 0; font-size: 2rem;transition: all 0.5s;}
+.ticket .ticket_txt:hover h3{font-size: 2.4rem; font-weight: 500; }
+.ticket .ticket_txt p{text-align: center; padding-bottom: 5px;}
+
+.ticket .ticket_txt .ticket_img{position: relative; width: 80%; margin: 30px auto ;  }
+.ticket .ticket_txt .ticket_img video{width: 100%; border-radius: 10px;}
+.ticket .ticket_txt .ticket_img img{width: 100%; border-radius: 10px;}
+.ticket .ticket_txt h3{font-weight: 400;}
+.ticket .ticket_txt p{width: 75%; margin: 0 auto;}
+.ticket .ticket_txt ul{ display: flex; margin-top: 20px; border-top: 2px solid #fff; padding-top: 20px;}
+.ticket .ticket_txt .ticket_img p:nth-of-type(1){position: absolute;  top: -10px; right: -10px; background: linear-gradient(#FF9933,#0099DD); color: #fff; padding: 30px; line-height: 1.2; width: auto; border-radius: 2px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);}
+.ticket .btn_buy{margin: 40px 0px ; border-radius: 30px; padding: 5px 15px;  color: #fff; transition: all 0.5s; font-size: 1.4rem;cursor: pointer; background: #000; font-size: 2rem;}
+.ticket .ticket_txt .ticket_img p span{font-size: 2rem; font-weight: 700;}
+.ticket .btn_buy:hover{background: #FF9933; padding: 5px 30px; }
