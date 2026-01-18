@@ -1,3 +1,24 @@
+$('#fullpage').fullpage({
+    responsiveWidth: 1380,
+    scrollHorizontally: true,
+    navigation: true,
+    navigationPosition: 'right',
+    showActiveTooltip: true,
+    onLeave: function (origin, destination, direction, trigger) {
+        if (destination === 2 || destination === 4) {
+            $("#header,#fp-nav").addClass("active");
+        } else {
+            $("#header,#fp-nav").removeClass("active");
+        };
+        if (destination === 6) {
+            $("#fp-nav, #header").fadeOut();
+        } else {
+            $("#fp-nav, #header").fadeIn();
+        };
+    },
+});
+
+
 $(document).ready(function () {
 
     const banner_list = new Swiper(".banner_list", {
@@ -73,22 +94,7 @@ $(document).ready(function () {
 
 
 
-    $("[class^='tab_btn'] button").on("click", function () {
 
-        $(this).addClass("active").siblings().removeClass("active");
-
-        let num = $(this).index();
-
-        let parentClass = $(this).parent().attr('class').split(' ')[0];
-        let tabNum = parentClass.replace(/[^0-9]/g, '');
-
-
-        const $targetGroup = $(".tab_list" + tabNum);
-        const $targetContent = $targetGroup.find(".tab_contents").eq(num);
-
-
-        $targetContent.fadeIn(300).siblings().hide();
-    });
 
 });
 

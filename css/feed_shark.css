@@ -1,36 +1,36 @@
 
 /* banner */
-#main .banner { background: url(../img/feed_shark.png) no-repeat center / cover; object-fit: cover; height: 95vh; width: 100%;}
+#main .banner { background: url(../img/feed_shark.png) no-repeat center / cover; object-fit: cover; height: 100%; width: 100%;}
 
-#main .banner .inner{ max-width: 1500px;}
+#main .banner {display: grid; grid-template-columns: 1fr 1fr 1fr;  margin: 0 auto;} 
+.banner_contents {position: relative;width: calc(100% / 3 )- 20px;  gap: 20px;}
 
+#main .banner .banner_contents video{width: 100%; height: 86rem; object-fit: cover; }
+.banner_contents  .video_txt h3{position: absolute; left: 50%; top: 0; transform: translateX(-50%); z-index: 10; width: 100%; height: 100%;display: flex; justify-content: center; align-items: center;  background:url(../img/shark_feeding_thumb.png) no-repeat center / cover; font-size: 3rem; transition: all 0.5s; text-shadow: 0 0 10px rgba(0,0,0,1); text-align: center; }
+.banner_contents:first-child  .video_txt h3{ background:url(../img/penguin_feeding_thumb.png) no-repeat center / cover; }
+.banner_contents:last-child  .video_txt h3{ background:url(../img/otter_feeding_thumb.png) no-repeat center / cover; }
 
-#main .banner .banner_contents{  padding-top: 450px; position: absolute; left: 4vw; bottom: 18vh; gap: 900px; }
-#main .banner .banner_txt{background: rgba(0,0,0,0.5); padding: 30px; border-left:  25px solid #0099DD; border-radius: 0 30px 30px 0px;}
-#main .banner .banner_txt h3{font-size: 4rem; padding-bottom: 20px; }
-#main .banner .banner_txt p{font-size: 2rem; }
+.banner_contents  h3:hover{opacity: 0;}
 
-#main .banner .banner_time { background:#fff; color: #000; text-align: center; margin-right: 100px; width: auto; padding: 10px;}
-#main .banner .banner_time li{display: flex; gap: 10px; align-items: center; }
-
-
-
+.banner_contents .video_txt p {color: #000;  font-size: 2rem; position: absolute;left: 0; bottom: 0; background: #fff; padding: 30px; line-height: 1.6;}
+.banner_contents .video_txt p::before {color: #fff; font-weight: 600;  font-size: 2rem; position: absolute;left: 0; top: -9rem;font-size: 3rem; padding: 30px; text-shadow: 0 0 10px rgba(0,0,0,5);}
+.banner_contents:first-child .video_txt p::before {content: "귀여운 펭귄 먹이주기 공연";display: block; }
+.banner_contents:nth-child(2) .video_txt p::before {content: "스릴만점 상어 먹이주기 공연";display: block;}
+.banner_contents:nth-child(3) .video_txt p::before {content: "아기 수달 먹이주기 공연";display: block; }
 
 
 /*..enjoy_shark */
-.enjoy_shark_txt {position: absolute; right: 3vw ; bottom: 7vh;}
-.enjoy_shark_txt ul{ margin-bottom: 100px; background: #0099DD; border-radius: 30px; color: #000; text-align: center; padding: 25px;gap: 30px;}
-.enjoy_shark_txt ul li .enjoy_shark_img{margin: 0 auto;  width: 40px; height: 40px; }
-.enjoy_shark_txt ul li .enjoy_shark_img img{width: 100%; }
+.enjoy_shark_txt {position: absolute; right: 10rem ; bottom: 20rem; transform: translateX(50%);}
+.enjoy_shark_txt ul{ text-align: right;}
+.enjoy_shark_txt ul li p{ background: rgba(0,0,0,0.2) ;backdrop-filter: blur(5px);  border-radius: 10px; display: inline-block; padding: 4px 16px; text-shadow: 0 0 5px rgba(0,0,1);}
+
+.enjoy_shark_txt ul li img{filter: invert(1);margin: 10px 10px 10px 0;}
 
 
 
-
-.nj_shark_txt { width: 100%; margin: 0 auto;padding: 5px 0 20px;}
-.nj_shark_txt h3{ padding-bottom: 10px;}
 
 /* limit */
-.limit{  background: #FF9933; width: 100%; color: #000; padding: 5px; text-align: center; font-weight: 500;} 
+.limit{  background: #111; width: 100%; color: #eee; padding: 10px 5px; text-align: center; font-weight: 500; font-size: 1.8rem;}  
 .limit h3{font-size: 3rem; padding-bottom: 30px;}
 
 .limit dl dt { padding-bottom: 30px; }
