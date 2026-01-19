@@ -7,7 +7,7 @@ body{color: #fff; font-size: 1.6rem; font-family: "Inter", sans-serif;}
 
 
 /* banner */
-#main{background: #efefef;}
+#main{background: #a1c7e0;}
 #main .banner { background: url(../img/aquarium_visual.jpg) no-repeat center / cover; object-fit: cover; height: 90vh;position: relative;}
 
 #main .banner .banner_txt{  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);background:linear-gradient( 90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); display: block;  position: absolute; left: 0; bottom: 0; z-index: 50; padding: 40px; }

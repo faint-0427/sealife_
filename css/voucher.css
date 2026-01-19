@@ -3,7 +3,7 @@
     --main-color:#F9661E
 }
 
-body{color: #fff; font-size: 1.6rem; font-family: "Inter", sans-serif;background: #efefef; }
+body{color: #fff; font-size: 1.6rem; font-family: "Inter", sans-serif;background: #a1c7e0; }
 .inner{max-width: 1740px; margin: 0 auto; padding: 0 20px;}
 
 
@@ -53,8 +53,8 @@ body{color: #fff; font-size: 1.6rem; font-family: "Inter", sans-serif;background
 .voucher_ticket li:hover .btn_buy{ background:#0099dd;transition: all 0.5s ; padding: 10px 40px;}
 
 /* voucher_faq */
-.voucher_faq{color: #000; margin: 100px auto; }
-.voucher_faq .inner{ max-width: 1350px;}
+.voucher_faq{color: #000; margin: 100px auto;}
+.voucher_faq .inner{ max-width: 1350px;   background: #fff; border-radius: 30px ; padding: 30px;}
 .voucher_faq .voucher_faq_txt h3{ font-size: 4rem; padding: 10px 0 30px; }
 .voucher_faq .voucher_faq_txt strong{font-size: 2rem; margin: 10px;  }
-.voucher_faq .voucher_faq_txt p{ font-size: 1.8rem;  border-radius: 30px; padding: 20px; margin: 10px 0;}
+.voucher_faq .voucher_faq_txt p{ font-size: 1.8rem;  border-radius: 20px; padding: 20px; margin: 10px 0; background: rgba(0,0,0,0.1);}
