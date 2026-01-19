@@ -2,26 +2,26 @@
 
 
 /* banner */
-#main .banner { background: url(../img/penguin_main.jpg) no-repeat center; object-fit: cover; height: 700px;}
-#main .banner .inner{ max-width: 1500px;}
 
 
-#main .banner .banner_contents{ display: flex; justify-content: space-between ;  padding-top: 450px;}
-#main .banner .banner_txt{background: rgba(0,0,0,0.5); padding: 15px 30px;border-radius: 10px;  backdrop-filter: blur(10px);}
-#main .banner .banner_txt h3{font-size: 4rem; letter-spacing: 2px; }
-#main .banner .banner_txt p{font-size: 2rem;  margin-top: 20px; line-height: 1.5;}
+.banner_contents{position: relative;}
+.banner_contents video{width: 100%; max-height: 500px; object-fit: cover; border-radius: 30px;  }
+.banner_txt{background: rgba(0,0,0,0.5); padding:  30px;  position: absolute; left: 50%;bottom: 35%;transform: translateX(-50%); text-align: center; border-radius: 30px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); border: 1px solid rgba(255,255,255,0.7);}
+.banner_txt h3{font-size: 4rem; letter-spacing: 2px; }
+.banner_txt p{font-size: 2rem;  margin-top: 20px; line-height: 1.5;}
 
-#main .banner .banner_map{font-weight: 600; font-size: 2.5rem; width: 150px; text-align: right; }
-#main .banner .banner_map img{width: 100%;}
-#main .banner .banner_map p{padding: 10px 0;margin: 0 auto;  }
-#main .banner .banner_map a{display: block; text-align: center; position: relative;}
-#main .banner .banner_map a>img{width: 50%;  animation: sparkle 1.5s ease-in-out infinite; transition: all 0.5s;}
-#main .banner .banner_map a:hover>img{animation: none; transform: scale(1.1);}
-#main .banner .banner_map a::before{content: "지하 2층"; display: flex;  margin: 0 auto; width: 100%; padding-bottom: 20px;  justify-content: center; text-align: center; align-items: center;}
-#main .banner .banner_map a::after{content: "위치 확인하기"; display: block; position: absolute; left: 50%; bottom: -9rem; transform: translateX(-50%);  width: 100%;  font-size: 1.8rem;font-weight: 500;   margin: 30px auto; background:rgba(255,255,255,0.8); color: #000; padding: 5px  ; border-radius: 10px; opacity: 0; transition: all 0.5s; }
-#main .banner .banner_map a:hover::after{position: absolute; left: 50%; bottom: -10rem; opacity: 1; }
+.banner_map{font-weight: 600; font-size: 2.5rem; width: 120px; text-align: right;  position: absolute;right: 8%; bottom: 42%;}
+.banner_map img{width: 100%;}
+.banner_map p{padding:  0;margin: 0 auto;  }
+.banner_map a{display: block; text-align: center; position: relative;}
+.banner_map a>img{width: 50%;  animation: sparkle 1.5s ease-in-out infinite; transition: all 0.5s;}
+.banner_map a:hover>img{animation: none; transform: scale(1.1);}
+.banner_map a::after{content: "지하 2층"; display: inline-block;   margin-top: 15px;font-size: 1.8rem;   color: #fff;background: rgba(0,0,0,0.5); font-weight: 400; padding: 3px 9px; border-radius: 5px;backdrop-filter: blur(5px); }
+.banner_map a::before{content: "지도보기"; display: block; position: absolute; left: 50%; bottom: 6.5rem; transform: translateX(-50%);  width: 100%;  font-size: 1.8rem;font-weight: 500;   margin-bottom: 45px; color: #fff; opacity: 0; transition: all 0.3s; }
+.banner_map a:hover::before{position: absolute; left: 50%; bottom: 7.5rem; opacity: 1; }
+
 @keyframes sparkle{
-0%, 100%{opacity: 0.4;}
+0%, 100%{opacity: 0.5;}
 50%{opacity: 1;}
 }
 
@@ -55,6 +55,7 @@
     font-size: 50px;
     font-weight: 300;
     cursor: pointer;
+    color: #fff;
 }
 
 
@@ -62,55 +63,57 @@
 
 
 /* penguin */
-.penguin .inner{ max-width: 1200px; color: #000; display: flex; margin: 150px auto; gap: 100px; align-items: center ; background: #fff; padding: 50px; border-radius: 10px;}
-.penguin .penguin_img{width: 50vw; }
+.penguin{margin: 100px auto;}
+
+.penguin .penguin_more{display: grid; grid-template-columns:  1fr 2fr;  gap: 50px; margin: 100px auto;}
+.penguin .penguin_more .penguin_information{  color: #000;      gap: 100px; background: #fff; padding: 50px; border-radius: 30px; height: auto; position: relative; }
+.penguin .penguin_img{min-width: 500px; }
 .penguin .penguin_img img{width: 100%;border-radius: 10px; }
 
-.penguin .penguin_txt h3{font-size: 3rem; padding: 10px 0;}
+.penguin .penguin_txt h3{font-size: 4rem; padding: 10px 0;margin-top: 30px;}
 .penguin .penguin_txt h3+p{font-size: 2rem; padding: 10px 0 20px;}
 
 
 
 /* introduce */
-.introduce{width: 100%; height: auto; min-height:30rem; display: flex; justify-content: center; align-items: center; color:#fff; text-align: center;  } 
-.introduce .introduce_list ul{display: flex;  gap: 15rem;justify-content: center; }
-.introduce .introduce_list .introduce_img{ width: 100px; height: 100px;}
-.introduce .introduce_list ul li {width: 200px;display: flex;flex-direction: column;align-items: center;}
-.introduce .introduce_list ul li img{width: 100%; height: auto; transition: all 0.5s; padding: 50px 0;  }
-.introduce .introduce_list ul li:hover img{transform: scale(1.2); }
-.introduce .introduce_list ul li p{font-size: 2rem; }
-.introduce .introduce_list ul li p:first-child{ background: #0099DD; border-radius: 10px; padding: 5px 15px ;}
+.introduce_list ul{display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;justify-content: center;background: url(../img/penguin_wave.png); border-radius: 30px; }
+.introduce_list .introduce_img{ width: 100px; height: 100px;}
+ .introduce_list ul li {display: flex;flex-direction: column;align-items: center; padding: 30px;}
+ .introduce_list ul li img{width: 100%; height: auto; transition: all 0.5s; padding: 50px 0;  }
+ .introduce_list ul li:hover img{transform: scale(1.2); }
+ .introduce_list ul li p{font-size: 2rem; }
 
-.introduce .introduce_list ul li p:last-child{ margin-top: 100px;  transition: all 0.5s;}
-.introduce .introduce_list ul li:hover p:last-child{ background: #0099DD; border-radius: 10px; padding: 0 15px ;}
+ .introduce_list ul li p:last-child{ margin-top: 100px;  transition: all 0.5s; width: 170px; text-align: center;} 
+ .introduce_list ul li:hover p:last-child{ background: #0099DD; border-radius: 10px; }
 
 /* uknw */
-.uknw{  color: #000; margin: 200px 0 100px;  }
-.uknw .inner{max-width: 1200px; text-align: center;}
-.uknw .inner h3{padding-bottom: 50px; font-size: 4rem;}
-.uknw .uknw_con{display: flex; justify-content: space-between; gap: 10px;}
+.uknw{  color: #000; }
+.uknw h3{padding: 80px 0 50px; font-size: 3rem; text-align: center;}
 
-.uknw .uknw_con:active{width: 100%; height: 100%;}
+.uknw ul{display: grid; grid-template-columns: 1fr 1fr;  gap: 20px; }
 
-.uknw .uknw_con li{   position: relative;}
-.uknw ul li > img{width: 100%; height: 100%; border-radius: 50px;}
-.uknw .uknw_list_text{ position: absolute; left: 50%;top: 45%; transform: translate(-50%, -50%);  width: 100%; padding: 40px; row-gap: 300px;}
-.uknw .uknw_list_text h2::before{content: "";   width: 100px; height: 100px; border-radius: 50%; backdrop-filter: blur(15px);  position: absolute ;left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: -1;transition: all  0.5s;}
-.uknw .uknw_list_text h2 { display: flex; justify-content: center; align-items: center; position: relative; z-index: 10; cursor: pointer;} 
-.uknw .uknw_list_text p{  margin-top: 100px; color: #fff; display: block; background: rgba(0,0,0,0.6) ;padding: 20px; border-radius: 20px; display: none; }
-.uknw .uknw_list_text:hover h2{display: none;}
-.uknw .uknw_list_text:hover p{display: block;}
+.uknw ul:active{width: 100%; height: 100%;}
+
+.uknw ul li{  min-height: 200px; background: #0099DD; padding: 30px; border-radius: 20px ; position: relative;overflow: hidden;}
+.uknw ul li p{font-size: 1.8rem; color: #fff; background: rgba(0, 0, 0, 0.7); padding: 15px; position: absolute; left: 0; bottom: 0; width: 100%; transform: translateY(120px); transition: all 0.5s;}
+.uknw ul li:hover p{transform: translateY(0);}
+.uknw ul li:first-child{background: url(../img/imsi.png) no-repeat center / cover;}
+.uknw ul li:nth-child(2){background: url(../img/imsi2.png) no-repeat center / cover;}
+.uknw ul li:nth-child(3){background: url(../img/imsi3.png) no-repeat center / cover;}
+.uknw ul li:nth-child(4){background: url(../img/imsi4.png) no-repeat center / cover;}
+.uknw ul li img{width: 100%;height: 100%; border-radius: 10px; object-fit: cover;}
+
 /* gone */
 
 .gone{ position: relative; text-align: right; }
 .gone img{ width: 100%;right: 300px;  }
 .gone .gone_txt{position: absolute; right: 0; top: 0; padding: 80px 100px; }
 .gone .gone_txt h3{font-size: 3.6rem; padding-bottom: 30px;}
-.gone .gone_txt p{flex-wrap: wrap;}
+.gone .gone_txt p{flex-wrap: wrap; font-size: 2rem; line-height: 1.7;}
 
 
 /* other_seas */
-.other_seas{position: relative; margin: 200px 0; color: #000; text-align: center;}
+.other_seas{position: relative; margin: 100px 0; color: #000; text-align: center;}
 .other_seas h3{font-size: 3.6rem; margin-bottom: 100px;}
 
 .other_seas h2{position: absolute;left: -200px;top: -200px; width: 70%;}
@@ -118,12 +121,10 @@
 
 
 .other_seas .other_seas_animal{display: flex;gap: 30px; max-width: 1200px;margin: 0 auto; justify-content: center; }
-.other_seas .other_seas_animal li{width: 300px; height: 300px;}
+.other_seas  h3{margin-bottom: 50px;}
+.other_seas .other_seas_animal li{width: 300px; height: 300px; overflow: hidden; border-radius: 10px; position: relative;}
+.other_seas .other_seas_animal li:hover img{transform: scale(1.1);}
 .other_seas .other_seas_animal li img{width: 100%; height: 100%;border-radius: 10px; margin-bottom: 20px; transition: all 0.5s; }
-.other_seas .other_seas_animal li:first-child img{border-radius: 100px  10px   100px  100px   ; }
- .other_seas .other_seas_animal li:nth-child(3) img{border-radius: 100px  10px   100px 10px  ; }
- .other_seas .other_seas_animal li:nth-child(2) img{border-radius:  10px 100px   10px 100px ; }
-.other_seas .other_seas_animal li:last-child img{border-radius:  10px 100px   100px 100px ; }
 .other_seas .other_seas_animal li:hover img{ filter: drop-shadow(0 0 5px rgba(0,0,0,0.5)) ; }
-.other_seas .other_seas_animal li a:last-child{font-size: 1.8rem; display: inline-block;  padding: 3px 15px ;color: #fff; transition: all 0.5s; font-size: 2rem; margin-top: 20px; background: #0099DD; border-radius: 10px;}
-.other_seas .other_seas_animal li:hover a:last-child{padding: 3px 30px; }
+.other_seas .other_seas_animal li p{position: absolute; left: 50%; bottom: 2rem; transform: translateX(-50%); font-size: 2rem; color: #eee; background: #111; padding: 5px 15px; width: 150px; border-radius: 10px; transition: all 0.5s;}
+.other_seas .other_seas_animal li:hover p{color: #fff; background: #0099DD;}
