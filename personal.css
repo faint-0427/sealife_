@@ -1,0 +1,77 @@
+
+
+
+body{color: #fff; font-size: 1.6rem; font-family: "Inter", sans-serif;}
+.inner{max-width: 1740px; margin: 0 auto; padding: 0 20px;}
+
+
+
+/* banner */
+#main{background: #a1c7e0;}
+#main .banner { background: url(../img/aquarium_visual.jpg) no-repeat center / cover; object-fit: cover; height: 90vh;position: relative;}
+
+#main .banner .banner_txt{  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);background:linear-gradient( 90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); display: block;  position: absolute; left: 0; bottom: 0; z-index: 50; padding: 40px; }
+#main .banner .banner_txt h3{font-size: 4rem; padding-bottom: 20px; }
+#main .banner .banner_txt p{font-size: 2rem; line-height: 1.5; }
+#main .banner .notice {position: absolute; right: 0 ; bottom: 0; z-index: 1; min-width: 10rem; text-align: right; margin: 50px;}
+#main .banner .notice p{padding: 5px 0;background: #efefef;margin-bottom: 10px; padding: 9px 27px; border-radius: 5px; color: #111; font-size: 1.8rem; border-top: 5px solid #0099dd; }
+
+
+
+
+
+
+/* ticket */
+
+.ticket{width: 100%;  }
+.ticket .inner{  max-width: 1720px; margin: 0 auto;  }
+.ticket .inner .ticket_list{margin: 100px 0; text-align: center; }
+.ticket .inner .ticket_list>h3{font-size: 3rem; color: #111;padding-bottom: 20px;}
+.ticket .inner .ticket_list>h3{font-size: 3rem; color: #111;padding-bottom: 20px;}
+.ticket .inner .ticket_list>p{ font-size: 1.8rem;color: #111}
+.ticket .inner .ticket_contents_list { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;  text-align: center;  gap: 20px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); margin-top: 75px;}
+.ticket .inner .ticket_contents_list>li{   min-height: 100px; border-radius: 10px; transition: all 0.5s;}
+.ticket .inner .ticket_contents_list>li:hover{transform: scale(1.01); }
+
+.ticket_1{background: url(../img/turtle.png) no-repeat center / cover;}
+.ticket_2{background: url(../img/ticket_img1.png) no-repeat center / cover;}
+.ticket_3{background: url(../img/ticket_img4.png) no-repeat center / cover;}
+.ticket_4{background: url(../img/ticket_img2.png) no-repeat center / cover;}
+.ticket_5{background: url(../img/ticket_img3.png) no-repeat center / cover;}
+.ticket_6{background: url(../img/ticket_img5.png) no-repeat center / cover;}
+.ticket_7{background: url(../img/ticket_img6.png) no-repeat center / cover;}
+.ticket_8{background: url(../img/ticket_img7.png) no-repeat center / cover;}
+.ticket_9{background: url(../img/ticket_img9.png) no-repeat center / cover;}
+.ticket_10{background: url(../img/ticket_img8.png) no-repeat center / cover;}
+
+.ticket .inner .ticket_contents_list>li .ticket_txt h3{font-size: 2.5rem; padding: 30px; display: block; background: linear-gradient(180deg, rgba(0,0,0,1),rgba(0,0,0,0)) ; border-radius: 10px 10px 0 0;min-height: 160px ;}
+.ticket .inner .ticket_contents_list li:first-child .ticket_01 h3::before{content: "최대 21% 할인"; display: block; font-size: 2rem; font-weight: 400;}
+.ticket .inner .ticket_contents_list li:nth-child(2) .ticket_02 h3::before{content: "온라인 특가"; display: block; font-size: 2rem; font-weight: 400;}
+.ticket .inner .ticket_contents_list li:nth-child(3) .ticket_03 h3::before{content: "최대 33% 할인"; display: block; font-size: 2rem; font-weight: 400;}
+.ticket_04 h3::before{content: "대기 없이 바로 입장 가능"; display: block; font-size: 2rem; font-weight: 400;}
+.ticket_05 h3::before{content: "최대 30% 할인"; display: block; font-size: 2rem; font-weight: 400;}
+.ticket_06 h3::before{content: "해피타임 35% 할인"; display: block; font-size: 2rem; font-weight: 400;}
+.ticket_07 h3::before{content: "온라인 특가 패키지"; display: block; font-size: 2rem; font-weight: 400;}
+.ticket_08 h3::before{content: "최대 55% 할인"; display: block; font-size: 2rem; font-weight: 400;}
+.ticket_09 h3::before{content: "최대 21% 할인"; display: block; font-size: 2rem; font-weight: 400;}
+.ticket_010 h3::before{content: "온라인 최저가"; display: block; font-size: 2rem; font-weight: 400;}
+
+.ticket_lastday .inner .ticket_list>h3::before{ display: block; content: "최소 1일전"; font-size: 2rem; margin-bottom: 5px;font-weight: 500;}
+
+.ticket_info_txt {  padding: 0 30px; min-height: 120px ;  font-size: 1.8rem; text-align: left;}
+.ticket_info_txt>p {padding: 5px 10px ; background: rgba(0, 0, 0, 0.3);backdrop-filter: blur(5px);  display: inline-block;margin-top: 5px; border-radius: 5px; }
+
+.ticket_price{text-align: left;padding: 0 30px; }
+.ticket_price li p{display: block; padding-bottom: 10px; font-weight: 600;}
+.ticket_price li span{font-size: 2.5rem; font-weight: 700; }
+.ticket_price li span.start_price:after{display: inline-block; content: "~부터"; font-size: 1.6rem; font-weight: 500; padding: 0 10px; }
+.ticket_price li span.end_price:after{display: inline-block; content: "최대가격"; font-size: 1.6rem; font-weight: 500; padding: 0 10px; }
+.ticket_price li span.normal_price{position: relative;}
+.ticket_price li span.normal_price:after{display: inline-block; content: "정상가격"; font-size: 1.6rem; font-weight: 500; padding: 0 10px; }
+.ticket_price li span.normal_price::before{ content: ""; display: block; position: absolute; left: 0; top: 50%; background: rgba(255, 0, 0, 0.632);width: 110px; height: 3px; box-shadow: 0 0 3px rgba(0, 0, 0, 0.7); }
+
+
+
+
+.btn_buy{background: #111; padding: 10px 30px; margin: 40px 0 30px; border-radius: 30px; color: #eee; font-weight: 600;font-size: 1.8rem;  transition:  all 0.5s; cursor: pointer;}
+.ticket .inner .ticket_contents_list>li:hover .btn_buy{background: #0099dd; padding: 10px 40px; text-shadow: 0 1px 5px rgba(0,0,0,0.5);}
